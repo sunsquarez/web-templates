@@ -34,18 +34,24 @@ body {
   font-family: 'NaikaiFont';
   overflow-x: hidden;
 }
+*:focus {
+  outline: none;
+}
 
-h1 span {
+h1 span,
+h2 span {
   position: relative;
   display: block;
   line-height: 1.2;
 }
-h1 span:first-child {
+h1 span:first-child,
+h2 span:first-child {
   font-family: 'Kefa';
   font-size: 22.3px;
   color: var(--red-400);
 }
-h1 span:last-child {
+h1 span:last-child,
+h2 span:last-child {
   font-size: 14.8px;
   color: var(--dust-200);
   padding-bottom: 10px;
@@ -58,6 +64,35 @@ h1 span:last-child:after {
   height: 16.5px;
   background-image: url('../images/global/heading-path.svg');
   background-repeat: round;
+}
+div.subheading {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+h2:before,
+h2:after {
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 125px;
+  height: 80px;
+}
+h2:before {
+  position: absolute;
+  left: 0;
+  transform: translate(-70%, -50%);
+  content: '';
+  background-image: url('../images/global/subsection-left.png');
+  background-repeat: no-repeat;
+}
+h2:after {
+  position: absolute;
+  left: 100%;
+  transform: translate(10px, -50%);
+  content: '';
+  background-image: url('../images/global/subsection-right.png');
+  background-repeat: no-repeat;
 }
 h1 span:first-child:before {
   top: -100%;
