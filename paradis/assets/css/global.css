@@ -166,3 +166,14 @@ main .container {
   position: relative;
   z-index: 2;
 }
+
+@media (max-width: 991.98px) {
+  main .wrapper.wrapper-alt:before {
+    background-image: url('../images/global/bg-top-left-alt.png');
+    opacity: 0.5;
+  }
+  main .wrapper.wrapper-alt:after {
+    background-image: url('../images/global/bg-bottom-right-alt.png');
+    opacity: 0.5;
+  }
+}
