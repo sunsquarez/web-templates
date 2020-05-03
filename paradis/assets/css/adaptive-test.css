@@ -186,6 +186,10 @@ div.adaptive-test-subsection .product .product__price {
     padding: 0;
     background-image: none;
   }
+  main.adaptive-test .adaptive-test__main .question {
+    padding: 0 13px;
+    margin: 0;
+  }
   main.adaptive-test .adaptive-test__main .question__control {
     margin-bottom: 28px;
   }
